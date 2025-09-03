@@ -1,0 +1,144 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: 500;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 0;
+}
+
+#sub-container{
+    display: flex;
+}
+
+#con-one{
+    padding: 40px;
+    width: 280px;
+    height: 400px;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#con-two{
+    padding: 40px;
+    width: 280px;
+    height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: -40px;
+}
+
+#con-two p:nth-of-type(1){
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-top: -10px;
+    font-weight: lighter;
+}
+
+#con-two h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    width: 80%;
+}
+
+#con-two p:nth-of-type(2){
+    line-height: 1.5em;
+    font-size: 14px;
+    width: 80%;
+}
+
+#con-two h1:nth-last-of-type(1){
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+}
+
+#con-two p:nth-last-of-type(1){
+    font-size: 14px;
+    margin-top: -32px;
+    margin-left: 150px;
+    text-decoration: line-through;
+}
+
+#con-two button{
+    padding: 15px;
+    width: 250px;
+    position: relative;
+    top: 30px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#con-two button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767.5px) {
+    #sub-container{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #con-one{
+        border-radius: 12px 12px 0px 0px;
+        margin: 0 auto;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #con-two{
+        border-radius: 0px 0px 12px 12px;
+        margin: 0 auto;
+        margin-top: -130px;
+        height: 320px;
+    }
+
+    #con-two h1{
+       width: 100%;
+       font-size: 30px;
+    }
+
+     #con-two p:nth-of-type(2){
+        width: 280px;
+    }
+
+    #con-two h1:nth-last-of-type(1){
+        position: relative;
+        top: 0px
+    }
+
+    #con-two p:nth-last-of-type(1){
+        position: relative;
+        top: -25px;
+        left: 10px;
+        margin-bottom: -20px;
+    }
+
+    #con-two button{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
