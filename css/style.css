@@ -11,11 +11,11 @@ body{
     padding: 0;
 }
 
-#sub-container{
+.sub-container{
     display: flex;
 }
 
-#con-one{
+.con-one{
     padding: 40px;
     width: 280px;
     height: 400px;
@@ -26,50 +26,50 @@ body{
     border-bottom-left-radius: 12px;
 }
 
-#con-two{
+.con-two{
     padding: 40px;
     width: 280px;
     height: 400px;
     background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    margin-left: -40px;
+    margin-inline-start: -40px;
 }
 
-#con-two p:nth-of-type(1){
+.con-two p:nth-of-type(1){
     letter-spacing: 0.5em;
     text-transform: uppercase;
     margin-top: -10px;
     font-weight: lighter;
 }
 
-#con-two h1{
+.con-two h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
     width: 80%;
 }
 
-#con-two p:nth-of-type(2){
+.con-two p:nth-of-type(2){
     line-height: 1.5em;
     font-size: 14px;
     width: 80%;
 }
 
-#con-two h1:nth-last-of-type(1){
+.con-two h1:nth-last-of-type(1){
     color: hsl(158, 36%, 37%);
     font-size: 35px;
     position: relative;
     top: 20px;
 }
 
-#con-two p:nth-last-of-type(1){
+.con-two p:nth-last-of-type(1){
     font-size: 14px;
     margin-top: -32px;
-    margin-left: 150px;
+    margin-inline-start: 150px;
     text-decoration: line-through;
 }
 
-#con-two button{
+.con-two button{
     padding: 15px;
     width: 250px;
     position: relative;
@@ -82,7 +82,7 @@ body{
     justify-content: center;
 }
 
-#con-two button:hover{
+.con-two button:hover{
     background-color: hsl(158, 42%, 18%);
 }
 
@@ -96,12 +96,12 @@ body{
 
 
 @media screen and (min-width: 320px) and (max-width: 767.5px) {
-    #sub-container{
+    .sub-container{
         display: block;
         margin: 0 auto;
     }
 
-    #con-one{
+    .con-one{
         border-radius: 12px 12px 0px 0px;
         margin: 0 auto;
         background-image: url(../images/image-product-mobile.jpg);
@@ -109,35 +109,35 @@ body{
         background-size: contain;
     }
 
-    #con-two{
+    .con-two{
         border-radius: 0px 0px 12px 12px;
         margin: 0 auto;
         margin-top: -130px;
         height: 320px;
     }
 
-    #con-two h1{
+    .con-two h1{
        width: 100%;
        font-size: 30px;
     }
 
-     #con-two p:nth-of-type(2){
+    .con-two p:nth-of-type(2){
         width: 280px;
     }
 
-    #con-two h1:nth-last-of-type(1){
+    .con-two h1:nth-last-of-type(1){
         position: relative;
         top: 0px
     }
 
-    #con-two p:nth-last-of-type(1){
+    .con-two p:nth-last-of-type(1){
         position: relative;
         top: -25px;
         left: 10px;
         margin-bottom: -20px;
     }
 
-    #con-two button{
+    .con-two button{
         margin: 0 auto;
         width: 100%;
     }
